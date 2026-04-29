@@ -1,0 +1,20 @@
+.home-background {
+  background-image: url('/assets/images/Certifications.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;       /* vertical center */
+  justify-content: flex-start; /* align left */
+  padding-left: 50px;        /* some left spacing */
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.do-list{
+    margin-left: 45px;
+    line-height: 0%;
+}

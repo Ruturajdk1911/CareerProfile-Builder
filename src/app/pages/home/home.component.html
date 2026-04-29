@@ -1,0 +1,27 @@
+<div class="home-background">
+  <!-- <div class="overlay-text">
+    <h1>Ruturaj Deelip Kulkarni</h1>
+    <p>Transforming Ideas into Applications – Full-Stack Engineering that Delivers Results.</p>
+  </div> -->
+</div>
+
+<div class="container py-5">
+  <div class="row g-4">
+    @for(card of cards; track card)
+    {
+    <div class="col-md-3">
+      <div class="card text-center shadow-sm h-100 hover-card">
+        <div class="card-body bg-light rounded-top">
+          <img [src]="card.image" alt="{{ card.title }}" class="img-fluid" style="height: 100px;">
+        </div>
+        <div class="card-footer bg-primary text-white fw-bold rounded-bottom">
+          <a [routerLink]="card.link" class="text-white text-decoration-none d-block card-title-link">
+            {{ card.title }}
+          </a>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+

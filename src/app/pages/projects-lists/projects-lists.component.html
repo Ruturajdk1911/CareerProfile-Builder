@@ -1,0 +1,22 @@
+<div class="tabs">
+  <div class="tab" [class.active]="activeTab === 'Project 1'" (click)="setActiveTab('Project 1')">
+    IET BAU Support
+  </div>
+  <div class="tab" [class.active]="activeTab === 'Project 2'" (click)="setActiveTab('Project 2')">
+    IET Adams
+  </div>
+  <div class="tab" [class.active]="activeTab === 'Project 3'" (click)="setActiveTab('Project 3')">
+    IET (Analytics & Direct)
+  </div>
+  <div class="tab" [class.active]="activeTab === 'Project 4'" (click)="setActiveTab('Project 4')">
+    Idox-iFIT
+  </div>
+  <div class="tab" [class.active]="activeTab === 'Project 5'" (click)="setActiveTab('Project 5')">
+    RTLS-Tracks
+  </div>
+  <div class="tab" [class.active]="activeTab === 'Project 6'" (click)="setActiveTab('Project 6')">
+    BPS-PSA
+  </div>
+</div>
+
+<router-outlet></router-outlet>

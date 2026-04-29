@@ -1,0 +1,29 @@
+.home-background {
+  background-image: url('/assets/images/About.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;     
+  justify-content: flex-start; 
+  padding-left: 50px;        
+}
+
+.overlay-text {
+  color: white;
+  max-width: 565px;    
+  text-align: left;         
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.do-list{
+    margin-left: 45px;
+    line-height: 0%;
+}

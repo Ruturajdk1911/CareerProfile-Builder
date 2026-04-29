@@ -1,0 +1,43 @@
+/* Make the app take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex layout for sticky footer */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows to fill remaining space */
+.container {
+  flex: 1;
+}
+
+header {
+  background: #3d84cf;
+  color: white;
+  padding: 1px;
+  text-align: center;
+}
+
+a{
+   color: white;   
+}
+
+/* Footer styling */
+footer {
+  background: #a6a2a2;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.margin-body{
+  margin-top: 20px;
+}

@@ -1,0 +1,70 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "About Me",
+      "image": "assets/images/working.png",
+      "link": "/about"
+    },
+    {
+      "id": 2,
+      "title": "Education",
+      "image": "assets/images/Education.png",
+      "link": "/education"
+    },
+    {
+      "id": 3,
+      "title": "Experience",
+      "image": "assets/images/Experience.png",
+      "link": "/experience"
+    },
+    {
+      "id": 4,
+      "title": "Projects Completed",
+      "image": "assets/images/Projects-Completed.png",
+      "link": "/project"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "category": "Programming Languages",
+      "items": ["C", "C#", "HTML 4/5", "CSS", "Javascript", "TypeScript"]
+    },
+    {
+      "id": 2,
+      "category": "Frontend Technologies/Libraries",
+      "items": ["Angular 12 to 19", "Angular Material", "Bootstarp 5", "jQuery", "Ajax", "Kendo UI"]
+    },
+    {
+      "id": 3,
+      "category": "Database",
+      "items": ["Microsoft SQL Server", "PostgreSQL", "SSRS (SQL Server Reporting Services)"]
+    },
+    {
+      "id": 4,
+      "category": "Version Control Tools",
+      "items": ["GitHub Desktop", "TortoiseSVN", "Jira"]
+    },
+    {
+      "id": 5,
+      "category": "Operating System",
+      "items": ["Windows", "Linux"]
+    },
+    {
+      "id": 6,
+      "category": "Tool/Editor",
+      "items": ["Visual Studio 2019/2022/2026", "Visual Studio Code", "Postman", "SSMS (SQL Server Management Studio)"]
+    },
+    {
+      "id": 7,
+      "category": "FrameWorks",
+      "items": ["ASP.NET", ".NET Framework 4.6/4.8", ".NET Core 6.0/8.0/10.0", "Entity Framework Core", "MVC", "Web API", "Windows Forms", "Windows Services", "Nunit Testing Framework"]
+    },
+    {
+      "id": 8,
+      "category": "Other skills",
+      "items": ["Web Accessibility", "Azure Functions", "Power Automate", "Power Apps"]
+    }
+  ]
+}

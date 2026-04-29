@@ -1,0 +1,31 @@
+.home-background {
+background-image: url('/assets/images/software-engineer.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hover-card:hover .card-title-link {
+  text-decoration: underline !important; 
+}
+
+.card-title-link {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.text-white {
+    color: #030303 !important;
+}
+
+
