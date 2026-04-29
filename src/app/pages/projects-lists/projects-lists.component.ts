@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { Router, RouterOutlet} from '@angular/router';
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './projects-lists.component.html',
-  styleUrl: './projects-lists.component.css'
+    selector: 'app-projects',
+    imports: [RouterOutlet],
+    templateUrl: './projects-lists.component.html',
+    styleUrl: './projects-lists.component.css'
 })
 export class ProjectsComponent {
 activeTab: string = 'Project 1';
