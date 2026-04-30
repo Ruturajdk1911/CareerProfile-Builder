@@ -13,6 +13,8 @@ import { IFITComponent } from './projects/i-fit/i-fit.component';
 import { RtlsComponent } from './projects/rtls/rtls.component';
 import { PsaComponent } from './projects/psa/psa.component';
 import { IetBauSupportComponent } from './projects/iet-bau-support/iet-bau-support.component';
+import { ResumePortfolioComponent } from './selfProjects/resume-portfolio/resume-portfolio.component';
+import { SelfProjectListComponent } from './pages/self-Projects-list/self-project-list/self-project-list.component';
 
 export const routes: Routes = [
     {path:'home', component:HomeComponent, title: 'Home'},
@@ -23,9 +25,9 @@ export const routes: Routes = [
     {path:'certifications', component:CertificationsComponent, title: 'Certifications'},
     {path:'personal-info', component:PersonalInfoComponent, title: 'Personal Profile'},
     {
-    path: 'project',
+    path: 'companyProject',
     component: ProjectsComponent,
-    title: 'Projects',
+    title: 'companyProject',
     children: [
       { path: '', redirectTo: 'project1', pathMatch: 'full' },
       { path: 'project1', component: IetBauSupportComponent, title: 'Projects 1' },
@@ -36,6 +38,15 @@ export const routes: Routes = [
       { path: 'project6', component: PsaComponent, title: 'Projects 6' },
     ],
   },
+  {
+  path: 'selfProject',
+  component: SelfProjectListComponent, // Use the list component as the parent
+  title: 'selfProject',
+  children: [
+    { path: '', redirectTo: 'resumeportfolio', pathMatch: 'full' },
+    { path: 'resumeportfolio', component: ResumePortfolioComponent, title: 'Resume Portfolio' },
+  ],
+},
    { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' },
 ];

@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { Router, RouterOutlet} from '@angular/router';
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './projects-lists.component.html',
-  styleUrl: './projects-lists.component.css'
+    selector: 'app-projects',
+    imports: [RouterOutlet],
+    templateUrl: './projects-lists.component.html',
+    styleUrl: './projects-lists.component.css'
 })
 export class ProjectsComponent {
 activeTab: string = 'Project 1';
@@ -15,7 +14,7 @@ activeTab: string = 'Project 1';
 
   ngOnInit(): void {
     const currentPath = this.router.url;
-    if (currentPath === '/project' || currentPath === '/project/') {
+    if (currentPath === '/companyProject' || currentPath === '/companyProject/') {
       this.setActiveTab('Project 1');
     } else {
       this.setTabFromUrl(currentPath);
@@ -25,7 +24,7 @@ activeTab: string = 'Project 1';
   setActiveTab(tab: string): void {
     this.activeTab = tab;
     const normalizedRoute = tab.toLowerCase().replace(/\s+/g, '');
-    this.router.navigate([`project/${normalizedRoute}`]);
+    this.router.navigate([`companyProject/${normalizedRoute}`]);
   }
 
   setTabFromUrl(url: string): void {

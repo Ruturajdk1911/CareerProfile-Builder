@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { SharedService } from '../../shared.service';
 
 @Component({
-  selector: 'app-skills',
-  standalone: true,
-  imports: [],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.css'
+    selector: 'app-skills',
+    imports: [],
+    templateUrl: './skills.component.html',
+    styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
 
