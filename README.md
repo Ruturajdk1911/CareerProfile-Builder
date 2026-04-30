@@ -1,27 +1,63 @@
-# ResumeBuilder
+# 🚀 Digital Resume - Professional Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.13.
+A dynamic, responsive web application built to showcase my professional journey, technical expertise, and personal projects. This self-built portfolio serves as a comprehensive digital resume designed for recruiters and collaborators.
 
-## Development server
+## 📋 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Architecture](#-project-architecture)
+- [Setup & Installation](#-setup--installation)
+- [Screenshots](#-screenshots)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## ✨ Features
+This application provides a modularized view of my professional profile, including:
+*   **Personal Profile:** A high-level overview and professional "elevator pitch."
+*   **Experience:** Detailed timeline of professional roles and responsibilities.
+*   **Projects:** A dedicated showcase for both professional and self-led projects.
+*   **Skills:** Technical proficiency in .NET, Angular, and SQL.
+*   **Education:** Academic background and qualifications.
+*   **Certifications:** List of professional certifications and achievements.
+*   **Interactive UI:** Seamless navigation with Angular Routing and dynamic filtering.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Tech Stack
+*   **Frontend:** Angular 18/21 (Standalone Components, Signals, Router)
+*   **Styling:** Bootstrap 5 & Custom CSS for a modern, clean look.
+*   **Backend (Mock):** JSON Server (used for data simulation and REST API testing).
+*   **Icons:** Bootstrap Icons.
 
-## Build
+## 🏗 Project Architecture
+The project follows a clean, component-based architecture:
+- **Pages:** Dedicated components for each section (About, Experience, etc.).
+- **Services:** Centralized data management for handling JSON-based resume data.
+- **Routing:** Global routing with child routes for nested project details.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Setup & Installation
 
-## Running unit tests
+### 1. Clone the repository
+git clone https://github.com/Ruturajdk1911/CareerProfile-Builder.git
+cd digital-resume
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### 2. Install dependencies
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+npm install
 
-## Further help
+### 3. Run JSON Server (Mock API)
+Ensure you have `json-server` installed. If not, run `npm install -g json-server`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+json-server --watch db.json --port 3000
+
+
+### 4. Run Development Server
+ng serve
+
+Navigate to `http://localhost:4200/` to view the app.
+
+## 👨‍💻 Author
+**Ruturaj Kulkarni**  
+*Full-Stack .NET & Angular Developer*  
+
+---
+*Developed using Angular version 18 and Bootstrap.*
