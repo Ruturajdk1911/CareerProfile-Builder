@@ -14,7 +14,7 @@ activeTab: string = 'Project 1';
 
   ngOnInit(): void {
     const currentPath = this.router.url;
-    if (currentPath === '/project' || currentPath === '/project/') {
+    if (currentPath === '/companyProject' || currentPath === '/companyProject/') {
       this.setActiveTab('Project 1');
     } else {
       this.setTabFromUrl(currentPath);
@@ -24,7 +24,7 @@ activeTab: string = 'Project 1';
   setActiveTab(tab: string): void {
     this.activeTab = tab;
     const normalizedRoute = tab.toLowerCase().replace(/\s+/g, '');
-    this.router.navigate([`project/${normalizedRoute}`]);
+    this.router.navigate([`companyProject/${normalizedRoute}`]);
   }
 
   setTabFromUrl(url: string): void {
